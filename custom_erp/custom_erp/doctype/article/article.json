@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:article_name",
  "creation": "2025-10-15 21:14:48.070735",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -20,7 +21,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Article Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "image",
@@ -61,10 +63,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-15 21:19:30.420518",
+ "modified": "2025-10-15 22:22:55.849783",
  "modified_by": "Administrator",
  "module": "Custom Erp",
  "name": "Article",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

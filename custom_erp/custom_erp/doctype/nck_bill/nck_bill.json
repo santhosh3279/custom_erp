@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-16 21:13:26.479540",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_faup",
+  "date",
+  "series",
+  "column_break_twlp",
+  "customer",
+  "mop",
+  "section_break_nrvn",
+  "item_search",
+  "column_break_guxw",
+  "quantity",
+  "section_break_nkud",
+  "item",
+  "section_break_pgvl",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_faup",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "NCK_Bill",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "EO\nWGB\nWG0\nER\nRT"
+  },
+  {
+   "fieldname": "column_break_twlp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "default": "Cash",
+   "fieldname": "mop",
+   "fieldtype": "Select",
+   "label": "MOP",
+   "options": "Cash\nCredit\nUPI\nCard"
+  },
+  {
+   "fieldname": "section_break_nkud",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Table",
+   "label": "Item",
+   "options": "Sales Invoice Item"
+  },
+  {
+   "fieldname": "section_break_pgvl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_nrvn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_search",
+   "fieldtype": "Data",
+   "label": "Item Search",
+   "options": "Barcode"
+  },
+  {
+   "fieldname": "column_break_guxw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-10-16 22:29:43.183529",
+ "modified_by": "Administrator",
+ "module": "Custom Erp",
+ "name": "NCK_Bill",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

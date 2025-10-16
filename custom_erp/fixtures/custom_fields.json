@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Customer-print_name",
+        "doctype": "Custom Field",
+        "dt": "Customer",
+        "module": "Custom Erp",
+        "fieldname": "print_name",
+        "fieldtype": "Data",
+        "label": "Print Name",
+        "insert_after": "customer_name"
+    }
+]
