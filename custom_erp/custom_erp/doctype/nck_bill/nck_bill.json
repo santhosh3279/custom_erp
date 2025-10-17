@@ -7,14 +7,14 @@
  "field_order": [
   "section_break_faup",
   "date",
-  "series",
   "column_break_twlp",
+  "series",
+  "column_break_speu",
   "customer",
+  "column_break_lmhq",
+  "customer_name",
+  "column_break_czmh",
   "mop",
-  "section_break_nrvn",
-  "item_search",
-  "column_break_guxw",
-  "quantity",
   "section_break_nkud",
   "item",
   "section_break_pgvl",
@@ -23,8 +23,7 @@
  "fields": [
   {
    "fieldname": "section_break_faup",
-   "fieldtype": "Section Break",
-   "label": "Details"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "amended_from",
@@ -67,10 +66,10 @@
   },
   {
    "fieldname": "section_break_nkud",
-   "fieldtype": "Section Break",
-   "label": "Items"
+   "fieldtype": "Section Break"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "item",
    "fieldtype": "Table",
    "label": "Item",
@@ -81,30 +80,30 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "section_break_nrvn",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "item_search",
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
    "fieldtype": "Data",
-   "label": "Item Search",
-   "options": "Barcode"
+   "label": "Customer Name",
+   "read_only": 1
   },
   {
-   "fieldname": "column_break_guxw",
+   "fieldname": "column_break_speu",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "quantity",
-   "fieldtype": "Data",
-   "label": "Quantity"
+   "fieldname": "column_break_lmhq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_czmh",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-10-16 22:29:43.183529",
+ "modified": "2025-10-17 08:21:58.143516",
  "modified_by": "Administrator",
  "module": "Custom Erp",
  "name": "NCK_Bill",
